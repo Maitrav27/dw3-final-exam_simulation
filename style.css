@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #009688;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.btn.delete {
+    background-color: #e53935;
+}
+
+.btn.delete:hover {
+    background-color: #c62828;
+}
+
+.btn.logout {
+    background-color: #ff9800;
+}
+
+.btn.logout:hover {
+    background-color: #fb8c00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input, textarea, select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #009688;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.error-message {
+    color: #e53935;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #009688;
+    color: white;
+    font-size: 1.1rem;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+td img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+a {
+    color: #009688;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+.login-container, .register-container {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login-container h2, .register-container h2 {
+    text-align: center;
+    color: #009688;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login-container form, .register-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container input, .register-container input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus, .register-container input:focus {
+    border-color: #009688;
+}
+
+.register-container a {
+    text-align: center;
+    margin-top: 10px;
+    color: #009688;
+}
+
+.register-container a:hover {
+    text-decoration: underline;
+}
+
+.add-product-container {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.add-product-container h2 {
+    text-align: center;
+    color: #009688;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.add-product-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-product-container input, .add-product-container textarea, .add-product-container select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.add-product-container input[type="file"] {
+    padding: 10px;
+}
+
+.add-product-container .btn.submit {
+    background-color: #4CAF50;
+}
+
+.add-product-container .btn.submit:hover {
+    background-color: #45a049;
+}
+
+.add-product-container .btn.back {
+    background-color: #009688;
+}
+
+.add-product-container .btn.back:hover {
+    background-color: #00796b;
+}
+
+a:hover {
+    color: #ff9800;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #009688;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00796b;
+}
